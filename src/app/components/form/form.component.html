@@ -1,0 +1,24 @@
+<section>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="day">Day</label>
+      <input type="text" id="day" formControlName="day" required />
+
+      <label for="month">Month</label>
+      <input type="text" id="month" formControlName="month" required />
+
+      <label for="year">Year</label>
+      <input type="text" id="year" formControlName="year" required />
+    </div>
+
+    <input type="submit" value="Calculator" />
+  </form>
+</section>
+
+<section>
+  <div *ngIf="result">
+    <p>{{ yearValue }} anos</p>
+    <p>{{ monthValue }} meses</p>
+    <p>{{ dayValue }} dias</p>
+  </div>
+</section>

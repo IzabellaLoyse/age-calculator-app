@@ -1,0 +1,27 @@
+.page-layout {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 1 / 4;
+
+  h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+
+.main {
+  grid-column: 2 / 3;
+}
+
+.footer {
+  grid-column: 1 / 4;
+
+  p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
